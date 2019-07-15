@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function yenikisim(){
+        var metin = document.getElementById("textarea").value;
+        var yenielemen = document.createElement("p");
+        var icerik = document.createTextNode(metin);
+        yenielemen.appendChild(icerik);
+        var anakisim = document.getElementById("anakısım");
+        anakisim.appendChild(yenielemen);
+    }
+    function sil(){
+        var elementler = document.getElementsByTagName("p");
+        if(elementler.length != 0){
+            var element = elementler[elementler.length-1];
+            var anne = element.parentNode;
+
+            anne.removeChild(element);
+        }
+    }
+</script>
+<body>
+    <div id="anakısım" style="background-color: ">
+     <p>Java script çalışma Java script çalışma Java script çalışma Java script çalışma 
+        Java script çalışma Java script çalışma Java script çalışma Java script çalışma Java script çalışma 
+        Java script çalışma Java script çalışma Java script çalışma Java script çalışma Java script çalışma 
+        Java script çalışma Java script çalışma Java script çalışma Java script çalışma Java script çalışma 
+        Java script çalışma 
+        Java script çalışma Java script çalışma Java script çalışma 
+        Java script çalışma Java script çalışma Java script çalışma Java script çalışma 
+    </p>
+    <h3>İkinci Hikaye</h3>
+    <p>Java script çalışma Java script çalışma Java script çalışma Java script çalışma 
+            Java script çalışma Java script çalışma Java script çalışma Java script çalışma Java script çalışma 
+            Java script çalışma Java script çalışma Java script çalışma Java script çalışma Java script çalışma 
+            Java script çalışma Java script çalışma Java script çalışma Java script çalışma Java script çalışma 
+            Java script çalışma 
+            Java script çalışma Java script çalışma Java script çalışma 
+            Java script çalışma Java script çalışma Java script çalışma Java script çalışma </p>
+        </div>
+    <textarea id="textarea" cols="30" rows="10"></textarea>
+    <button onclick="yenikisim()">Yeni Kısım Ekle</button>
+    <button onclick="Sil()">Sil</button>
+</body>
+</html>

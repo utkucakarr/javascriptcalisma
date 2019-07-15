@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    function dogrula(){
+        var deger = document.formisim.isim.value;
+        var deger1 = document.formisim.soyisim.value;
+        if (deger == ""){
+            window.alert("İsim alanı boş bırakılamaz");
+            return false;
+        }
+
+    }
+</script>
+<body>
+    <form name="formisim" action="gonder.php" onsubmit="return dogrula()" method="POST">
+        İsim Alanı : <input type="text" name="isim">
+        <input type="submit" value="gonder">
+
+    </form>
+</body>
+</html>

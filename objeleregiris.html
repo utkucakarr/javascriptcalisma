@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<script>
+    var pc1 = {marka:"Lenova",
+                model:"z500",
+                ram:"6gb",
+                cpu:2.66,
+                cekirdek_sayisi:4,
+                kapat:function(){
+                        window.alert("Kapatılıyor.....");
+                },
+                yazdir:function(){
+                        window.alert(this.marka);   // şuanda bulunduğum objeyi belirtmek için this kullandık.
+                }
+                }; 
+    pc1.yazdir();
+</script>
+<body>
+    
+</body>
+</html>
